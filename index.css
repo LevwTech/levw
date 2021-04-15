@@ -3,7 +3,7 @@
     padding: 0;
 }
 html { 
-    background: url("background.jpg") no-repeat center center fixed; 
+    background: url("jojo2.gif") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,5 +14,31 @@ html {
 padding-top: 30px;
     text-align:  center;
     font-size: 80px;
-    color: blue
+    color: blue;
+    font-family: 'Monda', sans-serif;
+  
+    animation-name: colored;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+
+  @keyframes colored {
+    0% {
+color: white;
+    }
+    25% {
+      color: cyan;
+    }
+
+    50% {
+color: blue;
+    }
+    75%{
+      color: darkblue;
+    }
+    100% {
+color: purple;
+    }
   }
