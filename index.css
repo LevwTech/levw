@@ -9,3 +9,10 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+
+  div {
+
+    text-align:  center;
+    font-size: 80px;
+    color: blue
+  }
