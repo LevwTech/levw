@@ -23,6 +23,22 @@ padding-top: 30px;
     animation-direction: alternate;
 
   }
+ img {
+   display: block;
+   width: 500px;
+   height: 500px;
+   margin: 30px auto;
+   border: 10px solid white;
+   animation-name: bordercolor;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
 
   @keyframes colored {
     0% {
@@ -41,4 +57,27 @@ color: blue;
     100% {
 color: purple;
     }
+  }
+  @keyframes bordercolor {
+  
+      0% {
+        border-color: white;
+      }
+      20% {
+        border-color: red;
+      }
+      40% {
+        border-color: green;
+      }
+      60% {
+        border-color: blue;
+      }
+      80% {
+        border-color: purple;
+      }
+      100% {
+        border-color: black;
+      }
+
+
   }
