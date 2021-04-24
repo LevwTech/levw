@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: url("../img/jojo2.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 80px;
+  color: blue;
+  font-family: "Monda", sans-serif;
+
+  animation-name: colored;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+img {
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  border: 10px solid white;
+  animation-name: bordercolor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.guessNumber {
+  display: block;
+  width: 20%;
+  margin: 15px auto;
+  text-decoration: none;
+  background-image: linear-gradient(to right, black, blue);
+  color: aliceblue;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@keyframes colored {
+  0% {
+    color: white;
+  }
+  25% {
+    color: cyan;
+  }
+
+  50% {
+    color: blue;
+  }
+  75% {
+    color: darkblue;
+  }
+  100% {
+    color: purple;
+  }
+}
+@keyframes bordercolor {
+  0% {
+    border-color: white;
+  }
+  20% {
+    border-color: red;
+  }
+  40% {
+    border-color: green;
+  }
+  60% {
+    border-color: blue;
+  }
+  80% {
+    border-color: purple;
+  }
+  100% {
+    border-color: black;
+  }
+}
