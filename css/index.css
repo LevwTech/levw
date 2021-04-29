@@ -42,13 +42,14 @@ img {
   flex-flow: row, wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 50px 50px 100px 50px;
 }
 .projects a {
   display: block;
   width: 20%;
   margin: 15px auto;
   text-decoration: none;
-  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  background-image: linear-gradient(to right, #1c7186, #6dd5ed);
   text-align: center;
   font-size: 30px;
   border-radius: 10px;
@@ -58,6 +59,15 @@ img {
   -o-border-radius: 10px;
   color: black;
   font-weight: bold;
+  transition-duration: 200ms;
+}
+
+a:hover {
+  color: #6dd5ed;
+  width: 22%;
+  background-color: black;
+  background-image: none;
+  border: 2px solid #6dd5ed;
 }
 
 @keyframes colored {
