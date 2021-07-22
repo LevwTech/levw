@@ -800,12 +800,12 @@ console.log(dogsSorted);
 // 'beforeend': Just inside the element, after its last child.
 // 'afterend': After the element itself
 
-
+// forEach
 //  ----------------- Data Transformation Array Methods -------------------
 //           map  -> returns a new array based on an operation
 //         filter  -> returns a new array based on a condition
 //                reduce  -> returns a single element 
-
+//  -----------------------------------------------------------------------
 
 //  const newArr =  arr.map(function (item){
 //   return operation (ie: item*2)  })
@@ -829,3 +829,32 @@ console.log(dogsSorted);
 //   return acc*item
 // },1);
 // console.log(y) // 6
+
+// find is like filter but returns only the first element that satisfies the condition
+
+// const x = [1,-1];
+// const y = x.find(item => item>0) ;
+// console.log(y); // 1
+
+// findIndex is like find but returns the index
+
+// some returns boolean from an array, like include but condition not only equality
+// returns true if one element atleast satisfies the condition
+
+// const x = [-1,1];
+// console.log(x.some(item => item<-1)); // false
+
+// every is like some but every element must return true from the expression not only one atleast
+
+// const x = [1,-1];
+// console.log(x.every(item => item>-2)) // true  
+
+// sort() only works in strings !! 
+
+// for numbers:
+// const arr = [3,-1,-69, 0]
+
+// arr.sort(function (a,b) {
+//   return b-a;
+// })
+// console.log(arr)
