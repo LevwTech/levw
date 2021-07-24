@@ -8,6 +8,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: white;
 }
 
 .Levw {
@@ -44,6 +45,33 @@ img {
   align-items: center;
   margin: 50px 50px 100px 50px;
 }
+
+@media screen and (max-width: 650px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .projects a {
+    /* display: block; */
+    background-color: white;
+    /* height: 50px; */
+    /* line-height: 50px; */
+    /* margin: 15px auto; */
+    /* text-decoration: none;
+    background-image: linear-gradient(to right, #1c7186, #6dd5ed);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    transition-duration: 200ms; */
+  }
+}
+
 .projects a {
   display: block;
   width: 20%;
@@ -61,6 +89,13 @@ img {
   font-weight: bold;
   transition-duration: 200ms;
 }
+@media screen and (max-width: 650px) {
+  .projects a {
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+  }
+}
 
 a:hover {
   color: #6dd5ed;
@@ -69,6 +104,8 @@ a:hover {
   background-image: none;
   border: 2px solid #6dd5ed;
 }
+
+/* ANIMATIONS */
 
 @keyframes colored {
   0% {
