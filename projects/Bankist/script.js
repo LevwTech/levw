@@ -40,7 +40,13 @@ closeBtn.addEventListener('click', function(){
   cookieMsg.remove();
 })
 
-// console.log(getComputedStyle(cookieMsg).width)
+const btnScrollTo = document.querySelector(`.btn--scroll-to`);
+const section1 = document.querySelector(`#section--1`);
 
+btnScrollTo.addEventListener('click', function(e) {
+  section1.scrollIntoView({behavior:'smooth'})
+});
+
+  
 
 
