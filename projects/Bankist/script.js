@@ -47,6 +47,62 @@ btnScrollTo.addEventListener('click', function(e) {
   section1.scrollIntoView({behavior:'smooth'})
 });
 
+
+const h1 = document.querySelector('h1');
+function head() {
+  alert("heading") }
+h1.addEventListener('mouseenter', head) ;
+h1.removeEventListener('mouseenter', head);
+
+const navNode = document.querySelectorAll(`.nav__link`);
+const features = document.querySelector(`#section--1`);
+const operations = document.querySelector(`#section--2`);
+const testimonials = document.querySelector(`#section--3`);
+
+navNode[0].addEventListener('click', function(e) {
+  e.preventDefault();
+features.scrollIntoView({behavior:`smooth`})
+});
+
+navNode[1].addEventListener('click', function(e) {
+  e.preventDefault();
+  operations.scrollIntoView({behavior:`smooth`})
+});
+
+navNode[2].addEventListener('click', function(e) {
+  e.preventDefault();
+  testimonials.scrollIntoView({behavior:`smooth`})
+});
+
+// Beginning of Tabbed Component
+ const btns = document.querySelectorAll('.operations__tab')
+
+
+ function removeAllbtnsAndOps() {
+  btns[0].classList.remove('operations__tab--active')
+  btns[1].classList.remove('operations__tab--active')
+  btns[2].classList.remove('operations__tab--active')
+  document.querySelector(`.operations__content--1`).classList.remove('operations__content--active')
+  document.querySelector(`.operations__content--2`).classList.remove('operations__content--active')
+  document.querySelector(`.operations__content--3`).classList.remove('operations__content--active')
+ }
+
+ btns[0].addEventListener('click', function (){
+  removeAllbtnsAndOps();
+btns[0].classList.add('operations__tab--active');
+document.querySelector(`.operations__content--1`).classList.add('operations__content--active');
+
+ });
+ btns[1].addEventListener('click', function (){
+  removeAllbtnsAndOps();
+  btns[1].classList.add('operations__tab--active');
+  document.querySelector(`.operations__content--2`).classList.add('operations__content--active');
   
-
-
+  
+});
+btns[2].addEventListener('click', function (){
+  removeAllbtnsAndOps();
+    btns[2].classList.add('operations__tab--active')
+    document.querySelector(`.operations__content--3`).classList.add('operations__content--active')
+  });
+     // End of Tabbed Component
