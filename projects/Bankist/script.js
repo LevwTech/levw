@@ -106,3 +106,37 @@ btns[2].addEventListener('click', function (){
     document.querySelector(`.operations__content--3`).classList.add('operations__content--active')
   });
      // End of Tabbed Component
+
+     // using event delegation to create hovering effect at nav bar
+     
+    //selecting nav which is the container
+    const nav = document.querySelector('.nav');
+    
+    // mouseover is similiar to mouseenter but mouseenter does not bubble
+    nav.addEventListener('mouseover', function (e) {
+      if(e.target.classList.contains('nav__link'))  {
+        const link = e.target
+        const siblings = link.closest('.nav').querySelectorAll('.nav__link')
+        const logo = link.closest('.nav').querySelector('img')
+
+        siblings.forEach(el => {
+          if(el!==link) el.style.opacity = 0.5
+        });
+        logo.style.opacity = 0.5
+      }
+
+
+    });
+    nav.addEventListener('mouseout', function (e) {  // mouseout is opposite of mouseover to undo the effect
+      if(e.target.classList.contains('nav__link'))  {
+        const link = e.target
+        const siblings = link.closest('.nav').querySelectorAll('.nav__link')
+        const logo = link.closest('.nav').querySelector('img')
+
+        siblings.forEach(el => {
+          if(el!==link) el.style.opacity = 1
+        });
+        logo.style.opacity = 1
+      }
+
+    });
