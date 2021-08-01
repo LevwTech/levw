@@ -106,8 +106,10 @@ btns[2].addEventListener('click', function (){
     document.querySelector(`.operations__content--3`).classList.add('operations__content--active')
   });
      // End of Tabbed Component
+// --------------------------------------------------------------------------------------------------------
 
-     // using event delegation to create hovering effect at nav bar
+
+     //    >>>>>>>>>  using event delegation to create hovering effect at nav <<<<<<<
      
     //selecting nav which is the container
     const nav = document.querySelector('.nav');
@@ -140,3 +142,14 @@ btns[2].addEventListener('click', function (){
       }
 
     });
+
+
+     // sticky navigation
+     window.addEventListener('scroll' ,function() {
+        if(window.scrollY > section1.getBoundingClientRect().top) {
+          nav.classList.add('sticky')
+        }
+        else {
+          nav.classList.remove('sticky')
+        }
+     });
