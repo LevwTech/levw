@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Bankist | When Banking meets Minimalist</title>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -21,6 +23,8 @@
           alt="Bankist logo"
           class="nav__logo"
           id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
         />
         <ul class="nav__links">
           <li class="nav__item">
@@ -41,6 +45,7 @@
       </nav>
 
       <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
         <h1>
           When
           <!-- Green highlight effect -->
@@ -58,7 +63,7 @@
       </div>
     </header>
 
-    <section class="section section--hidden" id="section--1">
+    <section class="section" id="section--1">
       <div class="section__title">
         <h2 class="section__description">Features</h2>
         <h3 class="section__header">
@@ -68,11 +73,10 @@
 
       <div class="features">
         <img
-          src="img/digital.jpg"
+          src="img/digital-lazy.jpg"
           data-src="img/digital.jpg"
           alt="Computer"
-          class="features__img "
-          loading="lazy"
+          class="features__img lazy-img"
         />
         <div class="features__feature">
           <div class="features__icon">
@@ -102,19 +106,17 @@
           </p>
         </div>
         <img
-          src="img/grow.jpg"
+          src="img/grow-lazy.jpg"
           data-src="img/grow.jpg"
           alt="Plant"
-          class="features__img "
-          loading = "lazy"
+          class="features__img lazy-img"
         />
 
         <img
-          src="img/card.jpg"
+          src="img/card-lazy.jpg"
           data-src="img/card.jpg"
           alt="Credit card"
-          class="features__img "
-          loading = "lazy"
+          class="features__img lazy-img"
         />
         <div class="features__feature">
           <div class="features__icon">
@@ -132,7 +134,7 @@
       </div>
     </section>
 
-    <section class="section section--hidden" id="section--2">
+    <section class="section" id="section--2">
       <div class="section__title">
         <h2 class="section__description">Operations</h2>
         <h3 class="section__header">
@@ -157,7 +159,7 @@
         </div>
         <div
           class="operations__content operations__content--1 operations__content--active"
-        > 
+        >
           <div class="operations__icon operations__icon--1">
             <svg>
               <use xlink:href="img/icons.svg#icon-upload"></use>
@@ -209,7 +211,7 @@
       </div>
     </section>
 
-    <section class="section section--hidden" id="section--3" >
+    <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
         <h2 class="section__description">Not sure yet?</h2>
         <h3 class="section__header">
@@ -218,7 +220,7 @@
       </div>
 
       <div class="slider">
-        <div class="slide slide--1">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">Best financial decision ever!</h5>
             <blockquote class="testimonial__text">
@@ -237,7 +239,7 @@
           </div>
         </div>
 
-        <div class="slide slide--2">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">
               The last step to becoming a complete minimalist
@@ -257,7 +259,7 @@
           </div>
         </div>
 
-        <div class="slide slide--3">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">
               Finally free from old-school banks
@@ -278,17 +280,13 @@
           </div>
         </div>
 
-        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
-        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
-        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
-        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
       </div>
     </section>
 
-    <section class="section section--sign-up section--hidden">
+    <section class="section section--sign-up">
       <div class="section__title">
         <h3 class="section__header">
           The best day to join Bankist was one year ago. The second best is
@@ -353,6 +351,6 @@
     </div>
     <div class="overlay hidden"></div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
