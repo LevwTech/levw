@@ -152,4 +152,43 @@ btns[2].addEventListener('click', function (){
         else {
           nav.classList.remove('sticky')
         }
-     });
+     }); // this isnt very memory efficient because its called at every scroll
+
+  
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll' , function () { 
+      for(let i = 0; i<4; i++) {
+      if(window.scrollY > (sections[i].getBoundingClientRect().top))
+          sections[i].classList.remove('section--hidden')
+      } // literally raping the memory 
+    });
+
+    // Slider component
+    const slides = document.querySelectorAll(`.slide`);
+    const slider = document.querySelector(`.slider`)
+    const btnLeft = document.querySelector(`.slider__btn--left`)
+    const btnRight = document.querySelector(`.slider__btn--right`)
+
+    let curSlide = 0;
+    const maxSlides = slides.length;
+
+    slides.forEach((s,i)=> s.style.transform = `translateX(${100*i}%)`); 
+    
+  btnRight.addEventListener('click' ,function () {
+    if(maxSlides-1 == curSlide) {
+      curSlide = 0;
+    }
+    else {
+      curSlide++;
+    }
+    slides.forEach((s,i)=> s.style.transform = `translateX(${100*(i-curSlide)}%)`); 
+  });
+  btnLeft.addEventListener('click' ,function () {
+    if(curSlide==0) {
+      curSlide = maxSlides-1;
+    }
+    else {
+      curSlide--;
+    }
+    slides.forEach((s,i)=> s.style.transform = `translateX(${100*(i-curSlide)}%)`); 
+  });
