@@ -63,4 +63,12 @@ getCountryData('egypt');
 //         .then(quote2 => console.log(`Another quote by ${quote2[0].character} :
 //         ${quote2[0].quote}`))
 
-      
+
+// building promises (not often used, mostly just consumed)
+      // const x = 12;   ;
+      // const myPromise = new Promise(function(resolve,reject){
+      //   if(x>11) resolve("Right!")  // then
+      //   else  reject(new Error("wrong!"))  // catch
+      // });
+      // myPromise.then(data => console.log(data)).catch(err=>alert(err))    // no need for res.json() 
+
