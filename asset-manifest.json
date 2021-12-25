@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b453733b.chunk.css",
-    "main.js": "/static/js/main.01a5713e.chunk.js",
-    "main.js.map": "/static/js/main.01a5713e.chunk.js.map",
+    "main.js": "/static/js/main.abf2bc0d.chunk.js",
+    "main.js.map": "/static/js/main.abf2bc0d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2e8e232.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2e8e232.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
@@ -16,20 +16,24 @@
     "static/media/auth.c8a68563.png": "/static/media/auth.c8a68563.png",
     "static/media/cehub.1893948e.png": "/static/media/cehub.1893948e.png",
     "static/media/cpp.c4a42e13.svg": "/static/media/cpp.c4a42e13.svg",
-    "static/media/db.a77d2852.png": "/static/media/db.a77d2852.png",
     "static/media/expenses.acd1cf12.png": "/static/media/expenses.acd1cf12.png",
+    "static/media/express.cca64e0f.png": "/static/media/express.cca64e0f.png",
     "static/media/firebase.ea1a2d66.svg": "/static/media/firebase.ea1a2d66.svg",
     "static/media/food.656947d6.png": "/static/media/food.656947d6.png",
     "static/media/github.705e116f.png": "/static/media/github.705e116f.png",
     "static/media/js.cae65a84.png": "/static/media/js.cae65a84.png",
     "static/media/mapty.724e83b0.png": "/static/media/mapty.724e83b0.png",
     "static/media/me.b981540b.jpeg": "/static/media/me.b981540b.jpeg",
+    "static/media/mongo.8cf84c7c.png": "/static/media/mongo.8cf84c7c.png",
+    "static/media/mongoose.b7ef9462.png": "/static/media/mongoose.b7ef9462.png",
+    "static/media/node.5d5d9d03.png": "/static/media/node.5d5d9d03.png",
     "static/media/python.91072be8.png": "/static/media/python.91072be8.png",
     "static/media/react.ae626225.svg": "/static/media/react.ae626225.svg",
     "static/media/redux.0e4fb1c8.svg": "/static/media/redux.0e4fb1c8.svg",
     "static/media/router.4e7bf5d9.svg": "/static/media/router.4e7bf5d9.svg",
     "static/media/vs.f4e2417d.svg": "/static/media/vs.f4e2417d.svg",
     "static/media/vscode.b8b1e001.svg": "/static/media/vscode.b8b1e001.svg",
+    "static/media/weather.2d773b11.png": "/static/media/weather.2d773b11.png",
     "static/media/week.edf3df45.png": "/static/media/week.edf3df45.png"
   },
   "entrypoints": [
@@ -37,6 +41,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.c316dc2e.chunk.js",
     "static/css/main.b453733b.chunk.css",
-    "static/js/main.01a5713e.chunk.js"
+    "static/js/main.abf2bc0d.chunk.js"
   ]
 }
